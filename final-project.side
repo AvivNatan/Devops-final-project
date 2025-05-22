@@ -1,0 +1,90 @@
+{
+  "id": "2cc13edc-c9fb-4879-8394-2c837bdbe4d1",
+  "version": "2.0",
+  "name": "final-project",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "7ac4d606-311b-45dd-827c-ce621108db2c",
+    "name": "validations",
+    "commands": [{
+      "id": "89b0d41b-93a1-44f3-80f4-a34a7c412c6a",
+      "comment": "",
+      "command": "open",
+      "target": "/AvivNatan-OrLerner-LiorKashi/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed732f4b-5276-4dd1-9acd-71efada46cf6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae274f0a-e242-4863-9679-e7b60d8d1b12",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5dcc034-66f2-4f6f-ab6b-b9c4a795ef31",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Aviv"
+    }, {
+      "id": "ee152842-dba9-4484-938a-b8c85c9bd62b",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaf5708e-3b38-4a45-b908-2c64223edf07",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "212777a5-37e4-4057-9e18-d13845c574e9",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Hello! Your form was submitted.",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "689cbc0e-0960-4d34-bcb1-597c4e449b85",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7ac4d606-311b-45dd-827c-ce621108db2c"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
