@@ -3,9 +3,16 @@
 <html>
 <head>
     <title>Simple JSP</title>
+    <script>
+        function handleSubmit() {
+            const name = document.getElementById("name").value;
+            alert("Hello " + name + "! Your form was submitted.");
+            return false; // מונע שליחה אמיתית
+        }
+    </script>
 </head>
 <body>
-    <form action="submit.jsp" method="post">
+    <form onsubmit="return handleSubmit();">
         <label for="name">Enter your name:</label>
         <input type="text" id="name" name="name">
         <button type="submit">Submit</button>
