@@ -21,6 +21,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "8a525821-627c-4a18-9f5f-d0ab661932f1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Visit Wikipedia",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "f261cbe9-0d22-48b0-9907-0906d881ca2d",
       "comment": "",
       "command": "verifyText",
@@ -70,13 +77,6 @@
       "comment": "",
       "command": "assertAlert",
       "target": "Hello! Your form was submitted.",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "8a525821-627c-4a18-9f5f-d0ab661932f1",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=Visit Wikipedia",
       "targets": [],
       "value": ""
     }]
