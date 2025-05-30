@@ -1,41 +1,34 @@
 {
-  "id": "078c2e7f-f432-4f44-80fa-c1baaefe1169",
+  "id": "6191486b-58ed-4716-8e7a-2b854aa00069",
   "version": "2.0",
   "name": "final-project",
   "url": "http://localhost:8080/AvivNatan-OrLerner-LiorKashi/",
   "tests": [{
-    "id": "d2fb5150-ed03-4266-86c7-43d1e34b80b2",
+    "id": "142cbed0-adf5-4a8c-9ea0-ec73391d5f65",
     "name": "validations",
     "commands": [{
-      "id": "e8eb4729-0724-4b43-a972-515061a00b83",
+      "id": "d9f9d6ba-b292-4812-8be4-3b839985ccda",
       "comment": "",
       "command": "open",
       "target": "http://localhost:8080/AvivNatan-OrLerner-LiorKashi/",
       "targets": [],
       "value": ""
     }, {
-      "id": "ea66c023-4322-4314-b319-8a21eafcece0",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=h1",
-      "targets": [],
-      "value": "Welcome to My Simple JSP Page"
-    }, {
-      "id": "7721b269-5903-42fa-a4b5-f664281ba157",
+      "id": "c3c58c0c-d24f-40aa-a9dd-4e7d2bf09d27",
       "comment": "",
       "command": "setWindowSize",
       "target": "788x667",
       "targets": [],
       "value": ""
     }, {
-      "id": "b3f7c923-d8e5-4249-bec6-fc4588c77e8b",
+      "id": "f261cbe9-0d22-48b0-9907-0906d881ca2d",
       "comment": "",
-      "command": "verifyElementPresent",
-      "target": "id=name",
+      "command": "verifyText",
+      "target": "css=h1",
       "targets": [],
-      "value": ""
+      "value": "Welcome to My Simple JSP Page"
     }, {
-      "id": "50f8ce56-609a-4cbe-b629-108325142bda",
+      "id": "adf1c5fb-d615-46a8-8c96-8072d73ae233",
       "comment": "",
       "command": "click",
       "target": "id=name",
@@ -48,7 +41,7 @@
       ],
       "value": ""
     }, {
-      "id": "29b28869-31c1-4545-b6d6-49d0b013d14e",
+      "id": "a569e7a3-a93c-4e3f-9fb1-0c8cce5fc02c",
       "comment": "",
       "command": "type",
       "target": "id=name",
@@ -59,9 +52,9 @@
         ["xpath=//input[@id='name']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": ""
+      "value": "Aviv"
     }, {
-      "id": "e3e0c9a3-89bb-4489-8d3b-55469b103acd",
+      "id": "56f4f57f-5085-42c7-90ad-e5e0a8a75065",
       "comment": "",
       "command": "click",
       "target": "css=button",
@@ -73,53 +66,29 @@
       ],
       "value": ""
     }, {
-      "id": "dd4f428e-5f4e-44f5-9e49-30ef9aedb02e",
+      "id": "7f51b98c-950a-4024-89c2-7e684d7a942c",
       "comment": "",
       "command": "assertAlert",
       "target": "Hello! Your form was submitted.",
       "targets": [],
       "value": ""
     }, {
-      "id": "a072a0b1-f49c-44b3-b997-34549f146ed5",
+      "id": "8a525821-627c-4a18-9f5f-d0ab661932f1",
       "comment": "",
-      "command": "click",
+      "command": "verifyElementPresent",
       "target": "linkText=Visit Wikipedia",
-      "targets": [
-        ["linkText=Visit Wikipedia", "linkText"],
-        ["css=li:nth-child(2) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Visit Wikipedia')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'https://www.wikipedia.org')]", "xpath:href"],
-        ["xpath=//li[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Visit Wikipedia')]", "xpath:innerText"]
-      ],
-      "value": "",
-      "opensWindow": true,
-      "windowHandleName": "win8102",
-      "windowTimeout": 2000
-    }, {
-      "id": "2e637f40-256f-4c38-b936-368270c1e6bd",
-      "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${win8102}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c013a95c-9431-47b8-b6c4-2dcd4f48a963",
-      "comment": "",
-      "command": "ver",
-      "target": "",
       "targets": [],
       "value": ""
     }]
   }],
   "suites": [{
-    "id": "e9990728-f99c-48d3-8d61-290a8d8daa9d",
+    "id": "9dca160e-571d-4dd7-afd6-af1a62c4df57",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
     "tests": []
   }],
-  "urls": [],
+  "urls": ["http://localhost:8080/AvivNatan-OrLerner-LiorKashi/"],
   "plugins": []
 }
