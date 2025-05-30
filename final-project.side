@@ -1,0 +1,125 @@
+{
+  "id": "078c2e7f-f432-4f44-80fa-c1baaefe1169",
+  "version": "2.0",
+  "name": "final-project",
+  "url": "http://localhost:8080/AvivNatan-OrLerner-LiorKashi/",
+  "tests": [{
+    "id": "d2fb5150-ed03-4266-86c7-43d1e34b80b2",
+    "name": "validations",
+    "commands": [{
+      "id": "e8eb4729-0724-4b43-a972-515061a00b83",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/AvivNatan-OrLerner-LiorKashi/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea66c023-4322-4314-b319-8a21eafcece0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Welcome to My Simple JSP Page"
+    }, {
+      "id": "7721b269-5903-42fa-a4b5-f664281ba157",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x667",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3f7c923-d8e5-4249-bec6-fc4588c77e8b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50f8ce56-609a-4cbe-b629-108325142bda",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29b28869-31c1-4545-b6d6-49d0b013d14e",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e0c9a3-89bb-4489-8d3b-55469b103acd",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd4f428e-5f4e-44f5-9e49-30ef9aedb02e",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Hello! Your form was submitted.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a072a0b1-f49c-44b3-b997-34549f146ed5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visit Wikipedia",
+      "targets": [
+        ["linkText=Visit Wikipedia", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Visit Wikipedia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.wikipedia.org')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Visit Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8102",
+      "windowTimeout": 2000
+    }, {
+      "id": "2e637f40-256f-4c38-b936-368270c1e6bd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8102}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c013a95c-9431-47b8-b6c4-2dcd4f48a963",
+      "comment": "",
+      "command": "ver",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e9990728-f99c-48d3-8d61-290a8d8daa9d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": [],
+  "plugins": []
+}
