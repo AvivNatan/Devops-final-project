@@ -1,94 +1,98 @@
 {
-  "id": "6191486b-58ed-4716-8e7a-2b854aa00069",
+  "id": "c70fbba8-42bd-43ba-9916-234d8bd7c968",
   "version": "2.0",
   "name": "final-project",
-  "url": "http://localhost:8080/AvivNatan-OrLerner-LiorKashi/",
+  "url": "http://localhost:8080",
   "tests": [{
-    "id": "142cbed0-adf5-4a8c-9ea0-ec73391d5f65",
+    "id": "0856f85e-e705-4ab5-8404-a3f499bf5ceb",
     "name": "validations",
     "commands": [{
-      "id": "d9f9d6ba-b292-4812-8be4-3b839985ccda",
+      "id": "46710fc3-fa3d-4194-a9de-4e906ddd6f03",
       "comment": "",
       "command": "open",
-      "target": "http://localhost:8080/AvivNatan-OrLerner-LiorKashi/",
+      "target": "/AvivNatan-OrLerner-LiorKashi/index.jsp",
       "targets": [],
       "value": ""
     }, {
-      "id": "c3c58c0c-d24f-40aa-a9dd-4e7d2bf09d27",
+      "id": "82aaffdd-e10f-4c6e-8bb8-468c41be5b28",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74fcfed4-5661-4b4e-a657-8d9c5b19b5af",
       "comment": "",
       "command": "setWindowSize",
-      "target": "788x667",
+      "target": "789x668",
       "targets": [],
       "value": ""
     }, {
-      "id": "8a525821-627c-4a18-9f5f-d0ab661932f1",
+      "id": "13680256-23b0-42e1-9679-2fbc6b81b43e",
       "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=Visit Wikipedia",
-      "targets": [],
+      "command": "click",
+      "target": "linkText=About",
+      "targets": [
+        ["linkText=About", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'About')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'about.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'About')]", "xpath:innerText"]
+      ],
       "value": ""
     }, {
-      "id": "f261cbe9-0d22-48b0-9907-0906d881ca2d",
+      "id": "8bf17746-31dd-48ae-a9a0-08aca3bd8815",
       "comment": "",
-      "command": "verifyText",
+      "command": "assertText",
       "target": "css=h1",
       "targets": [],
-      "value": "Welcome to My Simple JSP Page"
+      "value": "About This App"
     }, {
-      "id": "adf1c5fb-d615-46a8-8c96-8072d73ae233",
+      "id": "b7589f65-519e-4e2d-b540-f2e2917e46a2",
       "comment": "",
       "command": "click",
-      "target": "id=name",
+      "target": "linkText=Back to Home",
       "targets": [
-        ["id=name", "id"],
-        ["name=name", "name"],
-        ["css=#name", "css:finder"],
-        ["xpath=//input[@id='name']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
+        ["linkText=Back to Home", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back to Home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back to Home')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "a569e7a3-a93c-4e3f-9fb1-0c8cce5fc02c",
-      "comment": "",
-      "command": "type",
-      "target": "id=name",
-      "targets": [
-        ["id=name", "id"],
-        ["name=name", "name"],
-        ["css=#name", "css:finder"],
-        ["xpath=//input[@id='name']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "Aviv"
-    }, {
-      "id": "56f4f57f-5085-42c7-90ad-e5e0a8a75065",
+      "id": "232818da-62e6-404b-902c-db652dd6126a",
       "comment": "",
       "command": "click",
-      "target": "css=button",
+      "target": "linkText=Contact",
       "targets": [
-        ["css=button", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//button", "xpath:position"],
-        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+        ["linkText=Contact", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'contact.jsp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "7f51b98c-950a-4024-89c2-7e684d7a942c",
+      "id": "8cbcfabe-d5b5-4e89-a195-62520f53a7fc",
       "comment": "",
-      "command": "assertAlert",
-      "target": "Hello! Your form was submitted.",
+      "command": "assertText",
+      "target": "css=h1",
       "targets": [],
-      "value": ""
+      "value": "Contact Us"
     }]
   }],
   "suites": [{
-    "id": "9dca160e-571d-4dd7-afd6-af1a62c4df57",
+    "id": "394319eb-848c-41e7-aa29-b7afe3202c61",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["0856f85e-e705-4ab5-8404-a3f499bf5ceb"]
   }],
-  "urls": ["http://localhost:8080/AvivNatan-OrLerner-LiorKashi/"],
+  "urls": ["http://localhost:8080/"],
   "plugins": []
 }
