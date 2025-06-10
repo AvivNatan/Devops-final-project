@@ -7,7 +7,7 @@
     <script>
         function handleSubmit() {
             const name = document.getElementById("name").value;
-            alert("Hello, " + name + "! Your form was submitted.");
+            alert("Hello! Your form was submitted.");
             return false;
         }
     </script>
